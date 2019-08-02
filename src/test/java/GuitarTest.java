@@ -23,4 +23,9 @@ public class GuitarTest {
         assertEquals(500, guitar.getSellingPrice());
     }
 
+    @Test
+    public void hasMake() {
+        assertEquals("Fender", guitar.getMake());
+    }
+
 }
