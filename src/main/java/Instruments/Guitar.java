@@ -10,4 +10,7 @@ public class Guitar extends Instrument {
         this.noOfStrings = noOfStrings;
     }
 
+    public int getNoOfStrings() {
+        return noOfStrings;
+    }
 }
