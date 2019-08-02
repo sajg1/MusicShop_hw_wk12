@@ -18,5 +18,9 @@ public class SaxaphoneTest {
     public void hasABuyingPrice() {
         assertEquals(350, saxaphone.getBuyingPrice());
     }
-    
+
+    @Test
+    public void hasSellingPrice() {
+        assertEquals(599, saxaphone.getSellingPrice());
+    }
 }
