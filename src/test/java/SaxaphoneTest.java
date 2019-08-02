@@ -38,4 +38,14 @@ public class SaxaphoneTest {
     public void hasAnInstrumentType() {
         assertEquals("Brass", saxaphone.getInstrumentType());
     }
+
+    @Test
+    public void hasASaxaphoneType() {
+        assertEquals(SaxaphoneType.SOPRANO, saxaphone.getSaxaphoneType());
+    }
+
+    @Test
+    public void canPlayTheSaxaphone() {
+        assertEquals("I'm playing the Elkhart 100TS.", saxaphone.play());
+    }
 }

@@ -29,7 +29,7 @@ public abstract class Instrument extends StockItem implements IPlay {
     }
 
     public String play() {
-        return "I'm playing a " + getMake() + " " + getModel() + ".";
+        return "I'm playing the " + getMake() + " " + getModel() + ".";
     }
 
 }
