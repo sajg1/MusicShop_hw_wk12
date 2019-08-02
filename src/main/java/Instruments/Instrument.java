@@ -2,9 +2,10 @@ package Instruments;
 
 import StockItems.StockItem;
 import behaviours.IPlay;
+import behaviours.ISell;
 import enums.InstrumentType;
 
-public abstract class Instrument extends StockItem implements IPlay {
+public abstract class Instrument extends StockItem implements IPlay, ISell {
 
     private String make;
     private String model;
@@ -31,6 +32,10 @@ public abstract class Instrument extends StockItem implements IPlay {
 
     public String play() {
         return "I'm playing the " + getMake() + " " + getModel() + ".";
+    }
+
+    public int calculateMarkup() {
+        return getSellingPrice() - getBuyingPrice();
     }
 
 }

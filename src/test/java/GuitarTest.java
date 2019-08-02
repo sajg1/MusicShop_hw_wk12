@@ -48,4 +48,9 @@ public class GuitarTest {
     public void canPlayGuitar() {
         assertEquals("I'm playing the Fender Stratocaster.", guitar.play());
     }
+
+    @Test
+    public void canCalculateMarkup() {
+        assertEquals(200, guitar.calculateMarkup());
+    }
 }
