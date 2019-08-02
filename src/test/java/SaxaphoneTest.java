@@ -23,4 +23,19 @@ public class SaxaphoneTest {
     public void hasSellingPrice() {
         assertEquals(599, saxaphone.getSellingPrice());
     }
+
+    @Test
+    public void hasAMake() {
+        assertEquals("Elkhart", saxaphone.getMake());
+    }
+
+    @Test
+    public void hasModel() {
+        assertEquals("100TS", saxaphone.getModel());
+    }
+
+    @Test
+    public void hasAnInstrumentType() {
+        assertEquals("Brass", saxaphone.getInstrumentType());
+    }
 }
