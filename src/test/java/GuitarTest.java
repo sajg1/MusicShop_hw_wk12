@@ -28,4 +28,9 @@ public class GuitarTest {
         assertEquals("Fender", guitar.getMake());
     }
 
+    @Test
+    public void hasModel() {
+        assertEquals("Stratocaster", guitar.getModel());
+    }
+    
 }
