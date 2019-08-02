@@ -1,4 +1,5 @@
 import Instruments.Saxaphone;
+import enums.InstrumentType;
 import enums.SaxaphoneType;
 import org.junit.Before;
 import org.junit.Test;
@@ -11,7 +12,7 @@ public class SaxaphoneTest {
 
     @Before
     public void before() {
-        saxaphone = new Saxaphone(350, 599, "Elkhart", "100TS", "Brass", SaxaphoneType.SOPRANO);
+        saxaphone = new Saxaphone(350, 599, "Elkhart", "100TS", InstrumentType.BRASS, SaxaphoneType.SOPRANO);
     }
 
     @Test
@@ -36,7 +37,7 @@ public class SaxaphoneTest {
 
     @Test
     public void hasAnInstrumentType() {
-        assertEquals("Brass", saxaphone.getInstrumentType());
+        assertEquals(InstrumentType.BRASS, saxaphone.getInstrumentType());
     }
 
     @Test

@@ -2,14 +2,15 @@ package Instruments;
 
 import StockItems.StockItem;
 import behaviours.IPlay;
+import enums.InstrumentType;
 
 public abstract class Instrument extends StockItem implements IPlay {
 
     private String make;
     private String model;
-    private String instrumentType;
+    private InstrumentType instrumentType;
 
-    public Instrument(int buyingPrice, int sellingPrice, String make, String model, String instrumentType) {
+    public Instrument(int buyingPrice, int sellingPrice, String make, String model, InstrumentType instrumentType) {
         super(buyingPrice, sellingPrice);
         this.make = make;
         this.model = model;
@@ -17,15 +18,15 @@ public abstract class Instrument extends StockItem implements IPlay {
     }
 
     public String getMake() {
-        return make;
+        return this.make;
     }
 
     public String getModel() {
-        return model;
+        return this.model;
     }
 
-    public String getInstrumentType() {
-        return instrumentType;
+    public InstrumentType getInstrumentType() {
+        return this.instrumentType;
     }
 
     public String play() {

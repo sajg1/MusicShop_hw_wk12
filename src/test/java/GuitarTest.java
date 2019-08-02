@@ -1,4 +1,5 @@
 import Instruments.Guitar;
+import enums.InstrumentType;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -10,7 +11,7 @@ public class GuitarTest {
 
     @Before
     public void before() {
-        guitar = new Guitar(300, 500,"Fender", "Stratocaster", "String", 6);
+        guitar = new Guitar(300, 500,"Fender", "Stratocaster", InstrumentType.STRING, 6);
     }
 
     @Test
@@ -35,7 +36,7 @@ public class GuitarTest {
 
     @Test
     public void hasAnInstrumentType() {
-        assertEquals("String", guitar.getInstrumentType());
+        assertEquals(InstrumentType.STRING, guitar.getInstrumentType());
     }
 
     @Test
