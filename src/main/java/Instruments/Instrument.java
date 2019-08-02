@@ -28,5 +28,8 @@ public abstract class Instrument extends StockItem implements IPlay {
         return instrumentType;
     }
 
-    public abstract String play();
+    public String play() {
+        return "I'm playing a " + getMake() + " " + getModel() + ".";
+    }
+
 }
