@@ -13,4 +13,8 @@ public class Guitar extends Instrument {
     public int getNoOfStrings() {
         return noOfStrings;
     }
+
+    public String play() {
+        return "I'm playing a " + getMake() + " " + getModel() + ".";
+    }
 }

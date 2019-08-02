@@ -1,8 +1,9 @@
 package Instruments;
 
 import StockItems.StockItem;
+import behaviours.IPlay;
 
-public abstract class Instrument extends StockItem {
+public abstract class Instrument extends StockItem implements IPlay {
 
     private String make;
     private String model;
@@ -26,4 +27,6 @@ public abstract class Instrument extends StockItem {
     public String getInstrumentType() {
         return instrumentType;
     }
+
+    public abstract String play();
 }

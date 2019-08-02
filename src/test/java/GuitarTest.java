@@ -42,4 +42,9 @@ public class GuitarTest {
     public void hasNoOfStrings() {
         assertEquals(6, guitar.getNoOfStrings());
     }
+
+    @Test
+    public void canPlayGuitar() {
+        assertEquals("I'm playing a Fender Stratocaster.", guitar.play());
+    }
 }
