@@ -18,4 +18,9 @@ public class GuitarTest {
         assertEquals(300, guitar.getBuyingPrice());
     }
 
+    @Test
+    public void hasSellingPrice() {
+        assertEquals(500, guitar.getSellingPrice());
+    }
+
 }
