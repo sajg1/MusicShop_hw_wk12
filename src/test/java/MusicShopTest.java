@@ -55,4 +55,12 @@ public class MusicShopTest {
         assertEquals(1, shop.itemCount());
     }
 
+    @Test
+    public void canGetTotalProfitOfISellItems() {
+        shop.addItem(guitar);
+        shop.addItem(saxaphone);
+        assertEquals(2, shop.itemCount());
+        assertEquals(449, shop.totalPotentialProfit());
+    }
+
 }

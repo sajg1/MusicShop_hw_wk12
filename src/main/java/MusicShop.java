@@ -38,5 +38,11 @@ public class MusicShop {
     }
 
 
-
+    public int totalPotentialProfit() {
+        int total = 0;
+        for (ISell item : items) {
+            total += item.calculateMarkup();
+        }
+        return total;
+    }
 }
