@@ -33,6 +33,10 @@ public class MusicShop {
         this.items.clear();
     }
 
+    public void removeItem() {
+        this.items.remove(0);
+    }
+
 
 
 }

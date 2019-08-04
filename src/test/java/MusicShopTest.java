@@ -46,4 +46,13 @@ public class MusicShopTest {
 
     }
 
+    @Test
+    public void canRemoveIndividualItem() {
+        shop.addItem(guitar);
+        shop.addItem(saxaphone);
+        assertEquals(2, shop.itemCount());
+        shop.removeItem();
+        assertEquals(1, shop.itemCount());
+    }
+
 }
