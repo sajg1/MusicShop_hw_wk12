@@ -42,4 +42,9 @@ public class GuitarStringsTest {
     public void hasGuitarType() {
         assertEquals("Acoustic", guitarStrings.getGuitarType());
     }
+
+    @Test
+    public void canCalculateMarkup() {
+        assertEquals(4, guitarStrings.calculateMarkup());
+    }
 }
