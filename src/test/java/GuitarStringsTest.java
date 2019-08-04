@@ -32,4 +32,14 @@ public class GuitarStringsTest {
     public void hasManufacturer() {
         assertEquals("Addagio", guitarStrings.getManufacturer());
     }
+
+    @Test
+    public void hasMaterial() {
+        assertEquals("Nickel", guitarStrings.getMaterial());
+    }
+
+    @Test
+    public void hasGuitarType() {
+        assertEquals("Acoustic", guitarStrings.getGuitarType());
+    }
 }
