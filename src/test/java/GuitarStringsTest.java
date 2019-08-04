@@ -22,4 +22,14 @@ public class GuitarStringsTest {
     public void hasSellingPrice() {
         assertEquals(8, guitarStrings.getSellingPrice());
     }
+
+    @Test
+    public void hasDescription() {
+        assertEquals("Guitar Strings", guitarStrings.getDescription());
+    }
+
+    @Test
+    public void hasManufacturer() {
+        assertEquals("Addagio", guitarStrings.getManufacturer());
+    }
 }
